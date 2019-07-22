@@ -1,10 +1,12 @@
 #!/bin/sh
 
-BUILD_DIR = "build"
-DEB_DIR = "$BUILD_DIR"/php7.2-zstd_1.4.1-1
+set -e
 
-rm -rf "$DEB_DIR"
-mkdir "$DEB_DIR"
+BUILD_DIR="build"
+DEB_DIR="$BUILD_DIR"/php7.2-zstd_1.4.1-1
+
+rm -rf "$BUILD_DIR"
+mkdir -p "$DEB_DIR"
 cp -a DEBIAN "$DEB_DIR"/
 mkdir -p "$DEB_DIR"/etc/php/7.2/mods-available
 cp -a zstd.ini "$DEB_DIR"/etc/php/7.2/mods-available/
