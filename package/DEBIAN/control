@@ -1,0 +1,9 @@
+Package: php7.2-zstd
+Version: 1.4.1-1
+Architecture: amd64
+Maintainer: Jonathan Hammer <jonathan@e3software.com>
+Depends: php-common (>= 1:35), php7.2-common (>= 7.2)
+Provides: php-zstd
+Section: php
+Priority: optional
+Description: Zstandard module for PHP
